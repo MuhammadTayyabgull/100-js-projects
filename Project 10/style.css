@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1, #result, #label {
+  user-select: none;       /* ❌ Prevents text selection */
+  caret-color: transparent; /* ❌ Hides the blinking cursor */
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to left top, yellow, lightblue, yellow);
+}
+
+input::placeholder,
+textarea::placeholder {
+   
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color:  #757575;
+}
+.container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 213px;
+    width: 490px;
+    padding: 30px;
+    gap: 20px;
+    background: rgba(255,255,255,0.3);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+h1 {
+    align-self: flex-start;
+    margin-block: 10px;
+    font-weight: 700;
+    font-size: 32px;
+    color: rgb(0, 139, 139);
+    word-spacing: 5px;
+}
+.input-container {
+    width: 435px;
+    display: flex;
+   align-self: flex-start;
+   align-items: center;
+   justify-content: center;
+}
+#pounds {
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(0, 139, 139);
+    word-spacing: 5px;
+    
+}
+.input {
+    padding: 5px;
+    flex-grow: 1;
+    margin-left: 30px;
+    background: rgba(255,255,255,0.3);
+    border-color: rgba(255,255,255,0.5);
+    font-size: 18px;
+    border-radius: 10px;
+    color: darkgreen;
+    outline: none;
+}
+#result {
+    align-self: flex-start;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(0, 139, 139);
+}
+.error {
+    color: red;
+}

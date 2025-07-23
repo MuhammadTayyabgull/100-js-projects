@@ -1,0 +1,46 @@
+body{
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+     font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     background-color: rgb(234, 228, 228);
+   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+   border-radius: 8px;
+    width: 400px;
+    height: 320px;
+    gap: 5px;
+}
+.field-group{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-left: 20px;
+    gap: 5px;
+    width: 90%;
+
+}
+#convertBtn{
+width: 20%;
+background-color: #205fd2;
+color: white;
+border: none;
+border-radius: 5px;
+padding: 10px;
+}
+#from, #to {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: white
+}
+#result {
+    align-self: flex-start;
+    margin-left: 20px;
+}

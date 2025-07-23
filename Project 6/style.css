@@ -1,0 +1,68 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+    font-family: 'Segoe UI', sans-serif;
+}
+.dice {
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.top-left     { top: 20px;  left: 20px; }
+.top-right    { top: 20px;  right: 20px; }
+.center       { top: 50%;   left: 50%; transform: translate(-50%, -50%); }
+.bottom-left  { bottom: 20px; left: 20px; }
+.bottom-right { bottom: 20px; right: 20px; }
+
+.main-dice {
+    width: 100px;
+    height: 100px;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(720deg); }
+}
+
+.dice.roll {
+  animation: spin 0.7s ease-in-out;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    align-content: center;
+}
+.results {
+    margin-top: 20px;
+    text-align: left;
+    border-top: 1px dashed #ccc;
+}
+.roll-entry {
+    margin: 0px 10px;
+    font-size: 18px;
+}
