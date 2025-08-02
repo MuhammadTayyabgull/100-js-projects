@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Q&A</title>
+    <style>
+        body, html {
+            overscroll-behavior:none ;
+        }
+        body {
+            font-family: sans-serif;
+        }
+        .query {
+            width: 600px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding-block: 15px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-inline: 15px;
+            margin-block: 10px;
+        }
+        .question-top {
+            color: #B4D23F;
+            font-size: 20px;
+            font-weight: 700;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .button {
+            color: #B4D23F;
+            border: 2px solid #B4D23F;
+            border-radius: 10%;
+            width: 20px;
+            background-color: #fff;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+        }
+        .answer {
+            font-size: 18px;
+            align-content: space-between;
+            font-weight: 400;
+            display: none;
+            margin-block: 15px;
+            width: 100%;
+            padding-block: 10px;
+            color: #808080;
+            border-top: rgb(18, 14, 14) solid 1px;
+        }
+        .answer.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container d-flex align-items-center justify-content-center flex-column pt-5">
+    
+    <div class="query"> <div class="question-top">do you accept all major credit cards?<button class="button"><i style="font-size: 15px;" class="fa-solid fa-plus "></i></button> </div>
+    <span id="answer" class="answer">Yes, we accept all major credit cards.</span></div>
+    <div class="query"><div class="question-top">do you suppport local farmers? <button class="button"><i style="font-size: 15px;" class="fa-solid fa-plus"></i></button> </div>
+    <span id="answer" class="answer">Yes, we support local farmers.</span></div>
+    <div class="query"> <div class="question-top">do you use organic ingredients? <button class="button"><i style="font-size: 15px;"class=" fa-solid fa-plus"></i></button> </div>
+    <span id="answer" class="answer">Yes, we use organic ingredients.</div>
+</div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
