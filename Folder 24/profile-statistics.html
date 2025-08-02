@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Profile Statistics</title>
+    <style>
+        body {
+            font-family: cursive;
+            box-sizing: border-box;
+            background-color: #FFFF00;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            width: 250px;
+            height: 150px;
+            margin: 10px;
+            border: 2px dashed #008000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .number {
+            position: relative;
+            bottom: 20px;
+            font-weight: 900;
+            font-size:50px;
+            font-weight: bold;
+            color: #008000;
+
+        }
+        .text {
+            position: relative;
+            bottom: 20px;
+            font-weight: bold;
+            font-size: 20px;
+            color: black;
+        }
+        .icon {
+            position: relative;
+            top: -12px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="icon"><i class="fas fa-briefcase fa-3x icon"></i></div>
+            <div class="number" data-target="15">0</div>
+            <div class="text">Years Experience</div>
+        </div>
+        <div class="box">
+            <div class="icon"><i class="fas fa-cloud fa-3x icon"></i></div>
+            <div class="number" data-target="234">0</div>
+            <div class="text">Websites Made</div>
+        </div>
+        <div class="box">
+            <div class="icon"><i class="fab fa-apple fa-3x icon"></i></div>
+            <div class="number" data-target="28">0</div>
+            <div class="text">Apps Made</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
