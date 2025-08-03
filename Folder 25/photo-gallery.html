@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Photo Gallery</title>
+    <style>
+        body, html {
+            overscroll-behavior: none;
+        }
+  .results {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two images per row */
+    gap: 16px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .results img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    object-fit: cover;
+    aspect-ratio: 4 / 3; /* Optional: ensures consistent height */
+  }
+</style>
+
+</head>
+<body class="bg-danger text-light d-flex align-items-center
+justify-content-center flex-column min-vh-100"; style=" font-family: 'Courier New', Courier, monospace; background: linear-gradient(to bottom, lightgreen, lightblue); user-select: none;">
+    <div class="container bg-light d-flex align-items-center justify-content-center flex-column rounded-3 shadow" style="padding: 30px; margin-top: 15px;">
+        <h2 class="fw-bold text-dark pb-4">Photo Gallery</h2>
+        <p class="text-dark fs-5">Enter the number of photos</p>
+        <input id="countInput" class="bg-light text-dark fw-bold ps-4" style="height: 60px; width: 80px;" type="number" name="number" id="number">
+        <button id="btn" class="btn btn-dark mt-3" style="width: 150px; height: 40px;" id="btn">Generate</button>
+    </div>
+    <div class="results-container bg-light m-4 rounded-3 shadow" style="width: 89vw;" >
+
+        <div class="results"></div>
+    </div>
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

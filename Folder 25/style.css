@@ -1,0 +1,16 @@
+#results {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  #results img {
+    width: 100px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
