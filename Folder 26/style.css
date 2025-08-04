@@ -1,0 +1,70 @@
+* {
+  font-family:  monospace;
+}
+body {
+    margin: 0;
+    background: linear-gradient(to left, lightblue, lightgreen);
+}
+.container,button, body , #btn {
+    user-select: none;
+}
+.note-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    margin-inline: auto;
+    place-items: center;
+}
+
+.text {
+    color: #00008B;
+}
+
+.note {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  padding: 20px;
+  margin-inline: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.add-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+#btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FF69B4;
+   font-size: 70px;
+   font-weight: 900;
+   height: 200px;
+   width: 300px;
+   cursor: pointer;
+}
+/* styling for text area */
+.note-text {
+    border: none;
+    resize: none;
+    outline: none;
+    user-select: text;
+}
+.note:focus {
+    outline: none;
+    border: none;
+}
+.note-text:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.add-note:hover {
+    background-color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
