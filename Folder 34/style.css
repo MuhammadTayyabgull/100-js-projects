@@ -1,0 +1,34 @@
+.container {
+    position: relative;
+}
+
+.carousel .right-icon,
+.carousel .left-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+    color: #948B86;
+    z-index: 1;
+}
+
+.carousel .right-icon {
+    right: 5px;
+}
+
+.carousel .left-icon {
+    left: 5px;
+}
+.carousel .right-icon:hover,
+.carousel .left-icon:hover {
+    color: white;
+}
+.image {
+    transition: 0.5s transform ease;
+
+}
+.track {
+    display: flex;
+    transition: 0.5s transform ease;
+}
