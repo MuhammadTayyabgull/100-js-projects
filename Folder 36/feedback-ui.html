@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex align-items-center justify-content-center min-vh-100">
+    
+    <div class="container shadow-lg rounded gap-3 py-4 d-flex flex-column align-items-center justify-content-center">
+        
+        <!-- Feedback UI -->
+        <div class="ui w-100 d-flex flex-column align-items-center justify-content-center">
+            <h3 class="mb-3">Feedback UI</h3>
+
+            <div class="emoji-container d-flex flex-row justify-content-center align-items-center gap-3">
+                <div class="emoji pt-3">
+                    <img src="https://cdn-icons-png.flaticon.com/512/166/166527.png" alt="sad emoji">
+                    <p>Unhappy</p>
+                </div>
+                <div class="emoji pt-3">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1791/1791385.png" alt="poker face emoji">
+                    <p>Neutral</p>
+                </div>
+                <div class="emoji pt-3">
+                    <img src="https://cdn-icons-png.flaticon.com/512/166/166538.png" alt="happy emoji">
+                    <p>Happy</p>
+                </div>
+            </div>
+
+            <button class="btn mt-3">Send Review</button>
+        </div>
+        <!-- Thank You Message -->
+        <div id="thankYouMsg" class="thank-you text-center hidden">
+            <h3 class="fw-bold mb-3">Thank you</hp>
+            <h3 class="feedback fw-bold mb-3">Feedback: <span class="fdb fw-bold"></span></h3>
+            <p class="fw-light mt-3">We'll use your feedback to improve our customer support</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="script.js"></script>
+</body>
+</html>
