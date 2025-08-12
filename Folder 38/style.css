@@ -1,0 +1,16 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #FA8072;
+}
+
+.dictionary-contianer {
+    width: 380px;
+    height: 280px;
+    background-color: #FCA69D;
+}
+.dictionary-contianer input {
+    height: 53px;
+    width: 300px;
+    border: none;
+    border: 2px solid rgb(216, 212, 212);
+}
