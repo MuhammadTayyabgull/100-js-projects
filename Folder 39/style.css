@@ -1,0 +1,43 @@
+.container {
+    width: 400px;
+    height: 200px;
+}
+.emoji-wrapper {
+    width: 48px;       
+    height: 48px;       
+    overflow: hidden;   
+    margin-bottom: 1rem;
+  }
+  
+  .emoji-row {
+    display: flex;
+    transition: transform 0.4s ease;
+    width: calc(48px * 5); 
+  }
+  
+  .emoji-row i {
+    width: 48px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+/* Make emoji container a flex row */
+.emoji {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+/* Style for gold stars */
+.stars i.gold {
+    color: gold !important;
+}
+
+/* Default star color */
+.stars i {
+    color: #D3D3D3;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
