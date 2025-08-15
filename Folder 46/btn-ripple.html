@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Ripple</title>
+    <style>
+    .ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle,red);
+  transform: scale(0);
+  opacity: 0.6;
+  pointer-events: none;
+  animation: ripple-grow 0.4s ease-out forwards;
+}
+
+.ripple.shrink {
+  animation: ripple-shrink 0.4s ease-in forwards;
+}
+
+@keyframes ripple-grow {
+  to {
+    transform: scale(4);
+    opacity: 0.3;
+  }
+}
+
+@keyframes ripple-shrink {
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+  </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="grid place-content-center h-screen">
+<button id="btn" class="bg-[#FFC0CB] text-black text-lg px-10 py-4 rounded-md shadow-lg font-sans relative overflow-hidden">Button</button>
+    <script src="script.js"></script>
+</body>
+</html>
