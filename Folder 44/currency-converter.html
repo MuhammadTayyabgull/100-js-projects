@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-yellow-300 flex flex-col items-center justify-center h-screen">
+    <div class="container flex flex-col items-center justify-center gap-4 bg-[#04acac] shadow-md rounded px-7 h-[280px] w-[420px]">
+        <h1 class="mb-7 text-2xl text-white font-extrabold" style="font-family: 'Courier New', Courier, monospace;">Currency Converter</h1>
+        <div class="input flex justify-between w-full mb-8">
+            <select class="outline-none p-2 rounded" name="currency" id="fromCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="INR">INR</option>
+                <option value="GBP">GBP</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="JPY">JPY</option>
+            </select>
+            <input id="amount" class="bg-transparent outline-none text-end text-white w-28 text-2xl" type="number" id="amount">
+        </div>
+        
+        <div class="output flex justify-between w-full mb-3">
+            <select class="outline-none p-2 rounded" name="currency" id="toCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="INR">INR</option>
+                <option value="GBP">GBP</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="JPY">JPY</option>
+            </select>
+            <span id="result" class="text-white w-28 text-end text-2xl">hI</span>
+        </div>
+        
+        <div id="rate" class="text-white font-bold" style="font-family: 'Courier New', Courier, monospace;">1 USD = 80 INR</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
