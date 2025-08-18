@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Video</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="h-screen">
+
+    <div class="preloader fixed inset-0 flex items-center justify-center bg-black text-white z-50">
+        <div class="w-12 h-12 border-4 border-t-transparent border-white rounded-full animate-spin">
+            <img src="Fidget-spinner.gif" alt="preloader">
+        </div>
+    </div>
+
+
+    <div class="main invisible relative h-screen flex flex-col items-center justify-center gap-12 z-10">
+ 
+        <video class="bg-video fixed inset-0 w-full h-full object-cover" src="background-video.mp4" autoplay muted loop></video>
+        <div class="overlay fixed inset-0 bg-black/70 w-full h-full flex flex-col items-center justify-center gap-60">
+
+            
+            <h1 class="text-3xl text-white font-[sans-serif] font-weight-bold tracking-wider">Muhammad Tayyab</h1>
+            <button class="bg-white/30 backdrop-blur p-2 text-2xl rounded-md text-white">
+                <i class="fa fa-pause iconToggle"></i>
+            </button>
+        </div> 
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
