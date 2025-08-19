@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Pics Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col items-center bg-gradient-to-r from-blue-400 to-yellow-400 p-6">
+    <!-- Search Section -->
+    <div class="container bg-white rounded-md shadow-md flex flex-col items-center justify-center gap-4 w-[500px] h-[230px] m-auto">
+        <h1 class="text-black font-[cursive] text-2xl font-bold p-2">Anime Pics Generator</h1>
+        <input type="text" placeholder="Enter your Character" 
+            class="w-[80%] border-2 p-2 text-lg text-center rounded-md mb-4 focus:outline-none" 
+            id="search">
+        <button id="btn" class="btn text-lg bg-green-700 text-white rounded-md py-1 px-6 font-[Arial] hover:shadow-lg">Get pics</button>
+    </div>
+
+    <!-- Results Section -->
+    <div id="results" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-6 w-full max-w-6xl"></div>
+    <script src="script.js"></script>
+</body>
+</html>
