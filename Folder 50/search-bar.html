@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Search Bar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen flex flex-row items-center justify-center">
+    <div class="search-container flex flex-row items-center gap-4 w-[50px] rounded-3xl shadow-lg bg-white p-4 transition-all duration-1000 ease-in-out"> 
+       <div class="search-btn flex-shrink-0">
+            <img class=" w-[25px] h-[25px]" src="https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/magnifier-512.png" alt="magnifier">
+        </div>
+        <div class="search-input collapse"><input class="border-none outline-none" type="text" placeholder="search..."></div>
+        <div class="mic-btn collapse">
+            <img class="w-7" src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png" alt="microphone">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
