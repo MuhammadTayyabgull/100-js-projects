@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   <style>
+
+    .calc-btn{
+        background-color: white;
+        padding: 10px;
+        padding-inline: 20px;
+        border-radius: 5px;
+        color: black;
+        font-size: 20px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+        font-weight: 600;
+    }
+</style>
+</head>
+<body class="h-screen flex flex-col items-center justify-center">
+    <div class="calc-container pt-8 mt-4 p-4 shadow-lg rounded-md bg-[#F2F2F2]">
+        <input class="text-black bg-white text-2xl p-2 ml-4 rounded-lg shadow-lg outline-none" type="text" readonly id="result" style="width: 90%;">
+        <div class="buttons p-4 grid grid-cols-4 gap-5">
+            <button class="clear bg-red-500 rounded p-3 text-white text-2xl">C</button>
+            <button class="divide bg-blue-500 rounded p-3 text-white text-2xl">/</button>
+            <button class="multiply bg-blue-500 rounded p-3 text-white text-2xl">*</button>
+            <button class="substract bg-blue-500 rounded p-3 text-white text-4xl">-</button>
+            <button class="seven calc-btn">7</button>
+            <button class="eight calc-btn">8</button>
+            <button class="nine calc-btn">9</button>
+            <button class="add bg-blue-500 rounded p-3 text-white text-2xl">+</button>
+            <button class="four calc-btn">4</button>
+            <button class="five calc-btn">5</button>
+            <button class="six calc-btn">6</button>
+            <button class="equals bg-green-500 rounded text-white
+            col-span-1 row-span-2 text-2xl">=</button>
+            <button class="one calc-btn">1</button>
+            <button class="two calc-btn">2</button>
+            <button class="three calc-btn">3</button>
+            <button class="decimal calc-btn text-2xl">.</button>
+            <button class="zero calc-btn">0</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
