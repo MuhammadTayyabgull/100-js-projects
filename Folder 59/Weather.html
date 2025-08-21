@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center flex-col h-screen">
+    <div class="container w-[600px] pb-5 flex flex-col items-center gap-4 shadow-2xl pt-10 mt-8 rounded-md">
+
+        <h1 class="text-4xl font-bold pb-5">Weather App</h1>
+        <div class="input w-[400px] flex justify-between">
+        <input class="outline-none border-none bg-white" type="text" id="cityInput" placeholder="Enter city name">
+        <button class="px-3 py-1 text-lg bg-blue-600 text-white rounded-md" id="getWeather">Get Weather</button>
+    </div>
+        <div id="weatherResult"></div>
+    </div>
+    <script defer src="script.js"></script>
+</body>
+</html>
