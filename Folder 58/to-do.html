@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do app</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+        .checked-icon {
+        color: green;
+        transform: scale(1.2);
+        transition: 0.2s ease;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center h-screen bg-[#ADFF2F]">
+    <div class="task-input"><input class="outline-none bg-white border-black border-2 w-[400px] h-[60px] mt-20 rounded-t-lg text-start font-[cursive] ps-4" type="text" placeholder="Enter your task"></div>
+    <div id="taskList" class="w-[400px] flex flex-col"></div>
+    <script src="script.js"></script>
+</body>
+</html>
